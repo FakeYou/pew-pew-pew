@@ -1,20 +1,12 @@
-// import * as THREE from 'three';
-// import Game from './Game';
-
-// if (module.hot) {
-// 	module.hot.accept('./Game', () => {
-// 		console.log('reload game', Game.iets, 'hoi');
-// 	});
-// }
-
-// console.log('start game', Game.iets, 'hoi');
+import * as THREE from 'three';
+import Game from './Game';
 
 if (module.hot) {
-	module.hot.accept('./test', () => {
-		hoi();
+	module.hot.accept('./Game', () => {
+		console.log('reload game', Game.iets, 'hoi');
+		window.game = new Game();
 	});
 }
 
-const hoi = require('./test').default;
-
-hoi();
+window.game = new Game();
+window.THREE = THREE;

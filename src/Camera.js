@@ -9,9 +9,9 @@ export default class Camera extends THREE.PerspectiveCamera {
 
 		this.game = game;
 
-		this.position.x = 10;
-		this.position.y = 10;
-		this.position.z = 10;
+		this.position.x = 3;
+		this.position.y = 3;
+		this.position.z = 3;
 
 		this.lookAt(new THREE.Vector3(0, 0, 0));
 	}

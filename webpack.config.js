@@ -7,17 +7,6 @@ module.exports = {
 	entry: [
 		'./src/index'
 	],
-	module: {
-		rules: [
-			{
-				test: /\.js?$/,
-				use: 'babel-loader',
-				include: [
-					path.join(__dirname, './src'),
-				],
-			},
-		],
-	},
 	plugins: [
 		new webpack.NamedModulesPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
